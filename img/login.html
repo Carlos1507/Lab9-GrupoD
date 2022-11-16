@@ -75,6 +75,7 @@
       <link href="signin.css" rel="stylesheet">
 
     <script>
+      $(document).ready(function () {
       function buscarUsuario() {
         let nombre = document.getElementById("empId").value;
         let contrasenia = document.getElementById("empId").value;
@@ -94,7 +95,7 @@
                   $("#infoRes").html(err.responseJSON.msg);
                 });
         return false;
-      }
+      }});
     </script>
   </head>
 
