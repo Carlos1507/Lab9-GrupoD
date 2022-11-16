@@ -78,7 +78,6 @@
       function buscarUsuario() {
         let nombre = document.getElementById("empId").value;
         let contrasenia = document.getElementById("empId").value;
-        $("#datosEmp").hide();
         $("#infoRes").html("");
 
         $.post("http://localhost:8080/usuario/obtener", {nombre: nombre, contrasenia: contrasenia})
